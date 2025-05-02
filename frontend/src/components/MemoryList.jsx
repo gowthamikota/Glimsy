@@ -98,7 +98,7 @@ const MemoryList = () => {
             {memory.image && (
               <div className="memory-image">
                 <img 
-                  src={`http://localhost:5000${memory.image}`} 
+                  src={`https://glimsy.onrender.com${memory.image}`} 
                   alt="Memory preview" 
                 />
               </div>
