@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import MemoriesPage from './pages/MemoriesPage';
 import FriendDashboard from './pages/FriendDashboard';
 import CountdownPage from './pages/CountDownPage';
+import LetterPage from './pages/LetterPage';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
           <Route path="/dashboard" element={<FriendDashboard />} />
           <Route path="/countdown" element={<CountdownPage />} />
         
-
+<Route path="/messages" element={<LetterPage/>}/>
         </Routes>
     
     </BrowserRouter>

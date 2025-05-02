@@ -54,11 +54,11 @@ const FriendDashboard = () => {
     },
     {
       id: 'messages',
-      title: 'upcoming feature',
+      title: 'something for u',
       icon: '🎁',
-      description: `will be available soon`,
+      description: `chusaka helana cheyaku`,
       color: '#27ae60',
-      badge: unreadMessages
+     
     },
     
   ];
