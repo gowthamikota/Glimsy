@@ -26,37 +26,37 @@ const FriendDashboard = () => {
   }, []);
 
   // Countdown to return date
-  useEffect(() => {
-    const returnDate = new Date('2024-12-31');
-    const today = new Date();
-    const diffTime = returnDate - today;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    setDaysLeft(diffDays);
+  // useEffect(() => {
+  //   const returnDate = new Date('2025-06-02');
+  //   const today = new Date();
+  //   const diffTime = returnDate - today;
+  //   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  //   setDaysLeft(diffDays);
     
-    // Simulate fetching unread data
-    setUnreadMessages(3);
-    setNewMemories(2);
-  }, []);
+  //   // Simulate fetching unread data
+  //   setUnreadMessages(3);
+  //   setNewMemories(2);
+  // }, []);
   const features = [
     {
       id: 'countdown',
       title: 'Homecoming Countdown',
       icon: '⏳',
-      description: `See how many days until ${friendName} returns`,
+      description: `See how many days until you return`,
       color: '#4a6fa5'
     },
     {
       id: 'memories',
       title: 'Memory Gallery',
       icon: '📸',
-      description: `View and download ${friendName}'s special moments`,
+      description: `share your special moments of this month`,
       color: '#e67e22'
     },
     {
       id: 'messages',
-      title: 'Daily Surprises',
+      title: 'upcoming feature',
       icon: '🎁',
-      description: `${friendName}'s personalized messages`,
+      description: `will be available soon`,
       color: '#27ae60',
       badge: unreadMessages
     },
@@ -91,14 +91,14 @@ const FriendDashboard = () => {
       {/* Main content */}
       <div className="dashboard-container">
         <header className="dashboard-header" data-aos="fade-down">
-          <h1>Welcome to <span className="friend-name">{friendName}'s</span> Space</h1>
-          <p className="subtitle">Everything here is just for you, {friendName.split(' ')[0]}!</p>
+          <h1>Everything here is just for you, AK!</h1>
+          <p className="subtitle">Nannu marchipoku!</p>
           
-          {daysLeft > 0 && (
+          {/* {daysLeft > 0 && (
             <div className="countdown-banner" data-aos="zoom-in">
               <span className="countdown-number">{daysLeft}</span> days until {friendName.split(' ')[0]} returns
             </div>
-          )}
+          )} */}
         </header>
 
         <div className="features-grid">
@@ -124,7 +124,7 @@ const FriendDashboard = () => {
         
 
         <div className="special-note" data-aos="fade-in">
-          <p>This entire space is dedicated to you, {friendName.split(' ')[0]}. Every feature, memory, 
+          <p>This entire space is dedicated to you, bow. Every feature, memory, 
           and message is here to remind you how special you are, even while you're away.</p>
         </div>
       </div>

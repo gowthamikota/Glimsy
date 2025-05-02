@@ -27,8 +27,8 @@ const HomePage = () => {
       {/* Main content */}
       <div className="home-container">
         <header className="home-header">
-          <h1>WELCOME</h1>
-          <p className="subtitle">A collection of memories before you go</p>
+          <h1>WELCOME TO GLIMSY!</h1>
+          <p className="subtitle">A collection of memories </p>
         </header>
 
         <main className="home-main">
@@ -48,7 +48,7 @@ const HomePage = () => {
           </div>
 
           <div className="cta-section">
-            <p>To view our complete memory collection...</p>
+            <p>To get a glimpse of glimsy...</p>
             <Link to="/login" className="enter-button">
               click me to Enter!!!
             </Link>

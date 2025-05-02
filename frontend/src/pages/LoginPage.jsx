@@ -9,7 +9,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   // List of valid nicknames (replace with your actual nicknames)
-  const validNicknames = ['buddy', 'champ', 'sparky', 'tiger', 'sunshine'];
+  const validNicknames = ['pikachu'];
 
   useEffect(() => {
     const colors = ['#ff6b6b', '#4a6fa5', '#ffb347', '#7bc043', '#6d8bc3'];
@@ -38,8 +38,8 @@ const LoginPage = () => {
     }
 
     if (validNicknames.includes(trimmedNickname)) {
-      // Successful login - redirect to main page
-      navigate('/dashboard'); // Change this to your main page route
+  
+      navigate('/dashboard'); 
     } else {
       setError('That nickname doesn\'t match our memories. Try again.');
     }
@@ -70,7 +70,7 @@ const LoginPage = () => {
         <h1>Until We Meet Again</h1>
         <div className="message">
           This city won't be the same without you.<br />
-          Before you go, let's take one more trip down memory lane.
+        
         </div>
 
         <div className="nickname-prompt">

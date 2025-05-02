@@ -1,7 +1,7 @@
 /* Base styles */
 .home-page {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@
   
   /* Main container */
   .home-container {
-    background-color: rgba(255, 255, 255, 0.92);
+    /* background-color: rgba(255, 255, 255, 0.92); */
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -97,9 +97,12 @@
   
   .polaroid-image {
     height: 150px;
-    background-color: #eee;
+    /* background-color: #eee; */
     background-size: cover;
     background-position: center;
+   
+      background-image: url('https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');
+    
     margin-bottom: 1rem;
   }
   
@@ -109,7 +112,7 @@
     color: #333;
   }
   
-  /* CTA section */
+ 
   .cta-section {
     text-align: center;
     margin: 3rem 0;

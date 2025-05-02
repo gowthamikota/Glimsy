@@ -59,14 +59,14 @@ const CountdownPage = () => {
     return (
       <div className="celebration-screen">
         <div className="celebration-content">
-          <h1>🎉 Welcome Back, {friendName}! 🎉</h1>
-          <p>The wait is over! So glad you're back with us.</p>
-          <button 
+          <h1>🎉 BOW! 🎉</h1>
+          <p>let me tell u the num of days left</p>
+          {/* <button 
             className="dashboard-button"
             onClick={() => navigate('/dashboard')}
           >
             Go to Dashboard
-          </button>
+          </button> */}
           {[...Array(50)].map((_, i) => (
             <div 
               key={i}
