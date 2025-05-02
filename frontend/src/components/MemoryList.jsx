@@ -11,7 +11,7 @@ const MemoryList = () => {
   useEffect(() => {
     const fetchMemories = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/memories');
+        const response = await fetch('https://glimsy.onrender.com/api/memories');
         if (response.ok) {
           const data = await response.json();
           setMemories(data);
@@ -74,7 +74,7 @@ const MemoryList = () => {
             {selectedMemory.image && (
               <div className="expanded-image">
                 <img 
-                  src={`http://localhost:5000${selectedMemory.image}`} 
+                  src={`https://glimsy.onrender.com${selectedMemory.image}`} 
                   alt="Memory" 
                 />
               </div>
