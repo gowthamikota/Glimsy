@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://glimsy.onrender.com/api/$1"
+      }
+    ]
+  }
+  
