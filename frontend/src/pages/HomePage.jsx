@@ -27,7 +27,7 @@ const HomePage = () => {
       {/* Main content */}
       <div className="home-container">
         <header className="home-header">
-          <h1>WELCOME TO GLIMSY!</h1>
+          <h1>HAVE A SAFE JOURNEY BOW</h1>
           <p className="subtitle">A collection of memories </p>
         </header>
 
