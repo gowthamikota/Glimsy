@@ -1,0 +1,322 @@
+/* Updated CountdownPage.css */
+.countdown-page {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  padding: 2rem;
+}
+
+.dashboard-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(74, 111, 165, 0.9);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dashboard-button:hover {
+  background: #4a6fa5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-element {
+  position: absolute;
+  opacity: 0.7;
+  animation: float-up 15s linear infinite;
+  z-index: 0;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+@keyframes float-up {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.7; }
+  100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
+}
+
+.countdown-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 4rem 3rem 3rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 0.8s ease-out;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.countdown-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.countdown-header h1 {
+  color: #2d3748;
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4a6fa5, #6b8cae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.countdown-display {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown-segment {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  flex: 1;
+  min-width: 150px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-top: 5px solid #4a6fa5;
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-segment::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4a6fa5, #6b8cae);
+}
+
+.countdown-segment:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.countdown-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.countdown-segment:hover .countdown-number {
+  transform: scale(1.1);
+  color: #4a6fa5;
+}
+
+.countdown-label {
+  font-size: 1.1rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.encouragement-section {
+  background: rgba(74, 111, 165, 0.05);
+  padding: 2.5rem;
+  border-radius: 16px;
+  margin: 3rem 0;
+  border-left: 4px solid #4a6fa5;
+  backdrop-filter: blur(5px);
+}
+
+.encouragement-section p {
+  font-size: 1.3rem;
+  color: #4a6fa5;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reunion-ideas {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reunion-ideas li {
+  padding: 1rem 0;
+  position: relative;
+  padding-left: 2.5rem;
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.reunion-ideas li:before {
+  content: "•";
+  color: #4a6fa5;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+}
+
+.progress-container {
+  background: #edf2f7;
+  border-radius: 50px;
+  height: 28px;
+  margin: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 50px;
+  transition: width 1s ease-out, background-color 1s ease-out;
+  background: linear-gradient(90deg, #4a6fa5, #6b8cae);
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+}
+
+/* Celebration styles */
+.celebration-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #4a6fa5 0%, #3a5a80 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1000;
+}
+
+.celebration-content {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.celebration-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  animation: bounce 1s ease infinite alternate;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.celebration-content p {
+  font-size: 1.8rem;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .countdown-display {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .countdown-segment {
+    min-width: 100%;
+  }
+  
+  .countdown-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .countdown-number {
+    font-size: 3rem;
+  }
+  
+  .encouragement-section {
+    padding: 1.5rem;
+  }
+  
+  .celebration-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .celebration-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-container {
+    padding: 3rem 1.5rem 2rem;
+  }
+  
+  .dashboard-button {
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
